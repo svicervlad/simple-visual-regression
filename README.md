@@ -19,7 +19,7 @@ If you do not know what links should be tested, you can use:
 - By sitemap.xml file from your site. Use [online converter](https://www.seowl.co/sitemap-extractor/) to convert it to list and [list to json](https://ytool.net/en/list2json/) to convert it to json. Create `tests/links.json` file and paste json there.
 - You can also create `tests/links.json` file manually or use any other way to generate it.
 
-**Note:** `tests/links.json` file should contain array of strings with links to test. Links should be relative to your site domain like `/about` or `/blog/post-1`.
+**Note:** `tests/links.json` file should contain array of strings with links to test. Links should be relative to your site domain like `/about` or `/blog/post-1`. Domain should be set in `DOMAIN` environment variable. Domain should not contain protocol like `https://`.
 
 Then run tests first time to collect expected screenshots:
 
