@@ -13,6 +13,7 @@ test.describe(`Visual regression`, () => {
       await page.waitForLoadState('load', {timeout: 70000});
       // Check page status should be 200
       await expect(response?.ok(), 'Page status should be OK').toBeTruthy();
+      // Visual regression
       await expect(page).toHaveScreenshot({ maxDiffPixels: 10 });
     })
   }
