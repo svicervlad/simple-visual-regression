@@ -30,7 +30,7 @@ DOMAIN=<your_site_domain> npx playwright test vr -u
 Then run tests to compare actual screenshots with expected:
 
 ```bash
-DOMAIN=<your_site_domain> npx playwright test vr
+DOMAIN=<your_staging_site_domain> npx playwright test vr
 ```
 
 To show report in browser run:
