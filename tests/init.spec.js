@@ -11,6 +11,7 @@ test('Setup', async ({ page }) => {
     let allow_links = [];
     for (let link of links) {
       let href = await link.getAttribute('href');
+      // Skip absolute links without expected domain and normalize
       if (href?.indexOf('http') !== -1) {
         if (href?.indexOf(domain) !== -1) {
             href = href
