@@ -2,6 +2,10 @@
 
 This is a simple visual regression testing tool based on [Playwright](https://playwright.dev/).
 
+## Requirements
+
+- [see Playwright requirements](https://playwright.dev/docs/intro#system-requirements)
+
 ## Installation
 
 ```bash
